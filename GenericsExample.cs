@@ -1,10 +1,10 @@
  class GenericsExample
     {
-        static void Swap<T>(ref T a, ref T b)
+        static void Swap<T>(ref T val1, ref T val2)
         {
-            T temp = a;
-            a = b;
-            b = temp;
+            T tempval = val1;
+            val1 = val2;
+            val2 = tempval;
         }
 
         static void Main(string[] args)
